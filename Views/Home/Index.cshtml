@@ -1,0 +1,24 @@
+﻿@{
+    @model List<week10.Models.PriceModel>
+}
+
+<h1>Camilo Ordonez - 200565871</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.pid</td>
+                <td>@item.productname</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
